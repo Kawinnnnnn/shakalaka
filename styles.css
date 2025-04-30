@@ -1,0 +1,125 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #f9f9f9, #e6f2ff);
+    color: #222;
+    margin: 0;
+    padding: 20px;
+}
+  
+.menu-container {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+    padding: 24px;
+    max-width: 480px;
+    margin: auto;
+    transition: 0.3s ease;
+}
+  
+.logo {
+    width: 100px;
+    margin: 0 auto 12px;
+    display: block;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+  
+h1 {
+    font-size: 2em;
+    text-align: center;
+    margin: 8px 0 4px;
+    color: #111;
+    letter-spacing: 1px;
+}
+  
+p {
+    text-align: center;
+    font-size: 0.95em;
+    color: #666;
+    margin: 0 0 24px;
+}
+  
+.menu-section {
+    margin-bottom: 36px;
+}
+  
+h2 {
+    font-size: 1em;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #111;
+    text-transform: uppercase;
+    border-left: 5px solid #00c9ff;
+    padding-left: 10px;
+}
+  
+h2:has(span.tea) {
+    border-color: #4cd964;
+}
+h2:has(span.pastries) {
+    border-color: #ffbb33;
+}
+h2:has(span.breakfast) {
+    border-color: #ff6b81;
+}
+  
+.item {
+    background: #fafafa;
+    border-radius: 12px;
+    padding: 10px 14px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.95em;
+    transition: 0.2s;
+    border: 1px solid #eee;
+}
+  
+.item:hover {
+    transform: scale(1.02);
+    background: #f0faff;
+    border-color: #00c9ff44;
+}
+  
+ .item span:first-child {
+    font-weight: 500;
+}
+  
+.item span:last-child {
+    font-weight: 600;
+    color: #00b894;
+}
+  
+.contact-section {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #444;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    line-height: 1.6;
+}
+  
+.contact-section p {
+    margin: 6px 0;
+}
+  
+/* Tablet and larger phones */
+@media (min-width: 600px) {
+    .menu-container {
+      max-width: 550px;
+    }
+  
+    h1 {
+      font-size: 2.2em;
+    }
+  
+    h2 {
+      font-size: 1.15em;
+    }
+  
+    .item {
+      font-size: 1em;
+    }
+}
